@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="nav-side-menu">
+            <div class="brand">
+              <svg width="95" height="13" viewBox="0 0 95 13" xmlns="http://www.w3.org/2000/svg" role="presentation">
+                <path d="M.248.672H3.4L6.344 8.72h.048L9.304.672h3.168V12h-2V2.896h-.032L7 12H5.592L2.2 2.896h-.032V12H.248V.672zm17.742 0h7.504v1.76h-5.488v2.88h5.2v1.696h-5.2v3.2h5.776V12H17.99V.672zm16.446 4.88c.288 0 .576-.021.864-.064a2.51 2.51 0 00.776-.24c.23-.117.42-.285.568-.504.15-.219.224-.499.224-.84 0-.31-.069-.563-.208-.76a1.549 1.549 0 00-.528-.472 2.208 2.208 0 00-.728-.24 5.11 5.11 0 00-.792-.064h-1.824v3.184h1.648zM30.772.672h3.936A7.09 7.09 0 0136.26.84c.502.112.947.296 1.336.552.39.256.702.592.936 1.008.235.416.352.923.352 1.52 0 .821-.232 1.49-.696 2.008-.464.517-1.096.867-1.896 1.048L39.316 12h-2.432L34.26 7.2h-1.472V12h-2.016V.672zm21.263 2.656a2.581 2.581 0 00-1.168-.888 3.87 3.87 0 00-1.408-.28c-.587 0-1.12.107-1.6.32a3.75 3.75 0 00-1.24.88 3.91 3.91 0 00-.8 1.312 4.641 4.641 0 00-.28 1.632c0 .619.09 1.184.272 1.696.181.512.44.952.776 1.32.336.368.738.653 1.208.856a3.95 3.95 0 001.584.304c.608 0 1.146-.12 1.616-.36.469-.24.848-.557 1.136-.952l1.616 1.136a5.178 5.178 0 01-1.84 1.464c-.726.347-1.574.52-2.544.52-.886 0-1.699-.147-2.44-.44a5.621 5.621 0 01-1.912-1.232 5.609 5.609 0 01-1.248-1.888c-.299-.73-.448-1.539-.448-2.424 0-.907.157-1.725.472-2.456a5.47 5.47 0 011.296-1.864A5.754 5.754 0 0147.027.8a6.931 6.931 0 013.568-.312c.394.07.773.176 1.136.32a5.54 5.54 0 011.024.536c.32.213.592.47.816.768l-1.536 1.216zM67.04 7.84c0 .683-.117 1.299-.352 1.848a4.143 4.143 0 01-.96 1.4c-.405.384-.885.68-1.44.888a5.109 5.109 0 01-1.808.312c-.65 0-1.253-.104-1.808-.312a4.31 4.31 0 01-1.448-.888c-.41-.384-.73-.85-.96-1.4-.23-.55-.344-1.165-.344-1.848V.672h2.016V7.76c0 .33.043.659.128.984.085.325.227.616.424.872.197.256.459.464.784.624.325.16.728.24 1.208.24s.883-.08 1.208-.24c.325-.16.587-.368.784-.624.197-.256.339-.547.424-.872.085-.325.128-.653.128-.984V.672h2.016V7.84zm9.086-2.288c.288 0 .576-.021.864-.064a2.51 2.51 0 00.776-.24c.23-.117.419-.285.568-.504.15-.219.224-.499.224-.84 0-.31-.07-.563-.208-.76a1.549 1.549 0 00-.528-.472 2.208 2.208 0 00-.728-.24 5.11 5.11 0 00-.792-.064H74.48v3.184h1.648zM72.463.672H76.4c.533 0 1.05.056 1.552.168.501.112.947.296 1.336.552.39.256.701.592.936 1.008.235.416.352.923.352 1.52 0 .821-.232 1.49-.696 2.008-.464.517-1.096.867-1.896 1.048L81.007 12h-2.432l-2.624-4.8H74.48V12h-2.016V.672zm15.71 6.416L83.917.672h2.464L89.23 5.44 92.11.672h2.336L90.19 7.088V12h-2.016V7.088z" fill="currentColor" fill-rule="evenodd"></path>
+              </svg>
+            </div>
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+            <div class="menu-list">
+              <ul id="menu-content" class="menu-content collapse out">
+                <li class="active">
+                  <a href="#"> Home </a>
+                </li>
+                <li>
+                  <a href="#"> Transactions </a>
+                </li>
+                <li>
+                  <a href="#"> Payments </a>
+                </li>
+                <li>
+                  <a href="#"> Cards </a>
+                </li>
+                <li>
+                  <a href="#"> Credit <sup class="credit">New</sup>
+                  </a>
+                </li>
+                <li>
+                  <a href="#"> Treasury </a>
+                </li>
+                <li>
+                  <a href="#"> Capital </a>
+                </li>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#">
+                    <i class="fa fa-angle-right"></i>Accounts </a>
+                </li>
+                <ul class="sub-menu collapse" id="service">
+                  <li>Sales</li>
+                  <li>Customer</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="row" id='top-row-1'>
+            <div class="col-md-8">
+              <div class="input-group col-md-12">
+                <span class="input-group-append">
+                  <button class="btn btn-outline-secondary border-left-0 " type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </span>
+                <input class="form-control py-2 border-right-0 border" type="search" value="Search for transactions, accounts. pages, payees.." id="search-input">
+              </div>
+            </div>
+            <div class="col-md-4 mobile-btn">
+              <span class="move">
+                <div class="dropdown">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Move Money </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                      <img src='images/pay.png' alt='pay-someone'>Pay Someone </a>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/receive-funds.png" alt="receive funds">Add or Receive Funds </a>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/payment-request.png">Payment Request </a>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/transfer.png" alt="Transfer payment">Transfer Between Accounts </a>
+                  </div>
+                </div>
+              </span>
+              <span class='notify'>
+                <img src="images/notification-icon.png" alt='Notification Icon'>
+                <sup class="notify-number">2</sup>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 welcome">
+              <div class="bg-info" id='bg1'>
+                <p>Mercury Demo, Inc.</p>
+                <h2>Welcome, Jane</h2>
+                <p>Here are your company's most recent transactions:</p>
+                <table class="table" id='table-welcome'>
+                  <tbody>
+                    <tr>
+                      <td class="gray">Oct 15</td>
+                      <td>AR</td>
+                      <td>$ 54,810 <sup>.16</sup>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="gray">Oct 15</td>
+                      <td>Ops / Payroll</td>
+                      <td>$ -54,810 <sup>.16</sup>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="gray">
+                        <i>Pending</i>
+                      </td>
+                      <td>Jameson AC..</td>
+                      <td>$ -43,450 <sup>.50</sup>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="text-right view-more">
+                  <span>View More <i class="fa fa-angle-right"></i>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7 mbalance">
+              <div class="bg-info" id="bg2">
+                <p>MERCURY BALANCE</p>
+                <p class="count">
+                  <sup>$</sup>16,058,611 <sup>.76</sup>
+                </p>
+                <p class="mercury-amount">$20,547.69 Today, Oct 15</p>
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row m-b">
+            <div class="col-md-5">
+              <div class="bg-info money-out" id="bg2">
+                <p class="money">Money Out Last 30 Days</p>
+                <p class="count">
+                  <sup>$</sup>-345,613 <sup>.16</sup>
+                </p>
+                <div>
+                  <p>Jordi O'Donnell</p>
+                  <div id="progress-11" class="pull-xs-left">
+                    <div id="progress-bar-11"></div>
+                  </div>
+                  <div class="pull-xs-right">$91K</div>
+                </div>
+                <div>
+                  <p>Gusto (Payroll)</p>
+                  <div id="progress-22">
+                    <div id="progress-bar-22"></div>
+                  </div>
+                  <div class="pull-xs-right">$90K</div>
+                </div>
+                <div>
+                  <p>Other</p>
+                  <div id="progress-33">
+                    <div id="progress-bar-33"></div>
+                  </div>
+                  <div class="pull-xs-right">$84K</div>
+                </div>
+                <div>
+                  <p>Milgram Brokerage</p>
+                  <div id="progress-44">
+                    <div id="progress-bar-44"></div>
+                  </div>
+                  <div class="pull-xs-right">$43K</div>
+                </div>
+                <p class="view-all">View All <i class="fa fa-angle-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-7 last-bar">
+              <div class="bg-info money-in" id="bg2">
+                <p class="money">Money In Last 30 Days</p>
+                <p class="count">
+                  <sup>$</sup>524,734 <sup>.67</sup>
+                </p>
+                <div>
+                  <p>GenPro</p>
+                  <div id="progress-1" class="pull-xs-left">
+                    <div id="progress-bar-1"></div>
+                  </div>
+                  <div class="pull-xs-right">$98K</div>
+                </div>
+                <div>
+                  <p>Milgram Brokerage</p>
+                  <div id="progress-2">
+                    <div id="progress-bar-2"></div>
+                  </div>
+                  <div class="pull-xs-right">$53K</div>
+                </div>
+                <div>
+                  <p>Other</p>
+                  <div id="progress-3">
+                    <div id="progress-bar-3"></div>
+                  </div>
+                  <div class="pull-xs-right">$31K</div>
+                </div>
+                <div>
+                  <p>Orange, Inc.</p>
+                  <div id="progress-4">
+                    <div id="progress-bar-4"></div>
+                  </div>
+                  <div class="pull-xs-right">$15K</div>
+                </div>
+                <p class="view-all">View All <i class="fa fa-angle-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="js/script_custom.js"></script>
+  </body>
+</html>
