@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Example</title>
+    <title>Mercury | Banking for startups</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.ico" sizes="any">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -50,6 +51,10 @@
                   <li>Sales</li>
                   <li>Customer</li>
                 </ul>
+                 <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="#">
+                    Logout </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -63,13 +68,13 @@
                     <i class="fa fa-search"></i>
                   </button>
                 </span>
-                <input class="form-control py-2 border-right-0 border" type="search" value="Search for transactions, accounts. pages, payees.." id="search-input">
+                <input class="form-control py-2 border-right-0 border" type="search" placeholder="Search for transactions, accounts. pages, payees.." id="search-input">
               </div>
             </div>
             <div class="col-md-4 mobile-btn">
               <span class="move">
                 <div class="dropdown">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Move Money </button>
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Move Money  <i class="fa fa-angle-down"></i></button>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">
                       <img src='images/pay.png' alt='pay-someone'>Pay Someone </a>
@@ -147,28 +152,28 @@
                   <div id="progress-11" class="pull-xs-left">
                     <div id="progress-bar-11"></div>
                   </div>
-                  <div class="pull-xs-right">$91K</div>
+                  <div class="pull-xs-right">-$91K</div>
                 </div>
                 <div>
                   <p>Gusto (Payroll)</p>
                   <div id="progress-22">
                     <div id="progress-bar-22"></div>
                   </div>
-                  <div class="pull-xs-right">$90K</div>
+                  <div class="pull-xs-right">-$90K</div>
                 </div>
                 <div>
                   <p>Other</p>
                   <div id="progress-33">
                     <div id="progress-bar-33"></div>
                   </div>
-                  <div class="pull-xs-right">$84K</div>
+                  <div class="pull-xs-right">-$84K</div>
                 </div>
                 <div>
                   <p>Milgram Brokerage</p>
                   <div id="progress-44">
                     <div id="progress-bar-44"></div>
                   </div>
-                  <div class="pull-xs-right">$43K</div>
+                  <div class="pull-xs-right">-$43K</div>
                 </div>
                 <p class="view-all">View All <i class="fa fa-angle-right"></i>
                 </p>

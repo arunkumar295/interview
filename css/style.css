@@ -18,7 +18,9 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
+.col-md-5.welcome #bg1 {
+  padding: 40px 26px;
+}
 .nav-side-menu {
   overflow: hidden;
   font-size: 12px;
@@ -28,7 +30,7 @@ body {
   top: 0px;
   padding-left: 0px;
   height: 100%;
-  width: 17%;
+  width: 20%;
   color: #e1ffff;
 }
 
@@ -116,9 +118,24 @@ body {
   border-bottom: 0px solid #23282e;
   font-family: "Poppins", sans-serif;
   /* padding-left: 20px; */
-  padding: 10px 10px 10px 68px;
-  font-size: 14px;
+  padding: 10px 10px 10px 46px;
+  font-size: 13px;
   overflow: hidden;
+}
+.log {
+  line-height: 1.3 !important;
+  /*text-align: center;*/
+}
+.canvasjs-chart-toolbar {
+  display: none;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.site-head {
+  padding: 4px 6px;
+  margin-right: 4px;
+  box-shadow: 0px 0px 6px #cccaca;
 }
 .nav-side-menu li a {
   text-decoration: none;
@@ -138,6 +155,16 @@ body {
   -o-transition: all 1s ease;
   -ms-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.money-out div p:nth-child(1),
+.money-in div p:nth-child(1) {
+  text-transform: capitalize !important;
+  color: #333 !important;
+  padding-bottom: 0px !important;
+  letter-spacing: 0px !important;
+  font-size: 14px !important;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .nav-side-menu {
@@ -210,15 +237,17 @@ button.btn.btn-primary.dropdown-toggle {
   position: relative;
   top: -12px;
 }
+
 #bg1,
 #bg2 {
   box-shadow: 0px 0px 23px #e3e1e1;
   background-color: #fff !important;
   margin-bottom: 20px;
   padding: 40px;
-  height: 480px;
+  height: 500px;
   border-radius: 10px;
 }
+
 .mercury-amount {
   text-align: center;
 }
@@ -250,22 +279,26 @@ td {
   font-size: 12px;
 }
 #table-welcome td {
-  font-size: 12px;
+  font-size: 14px;
 }
 .gray {
   color: #9d9db0;
+}
+.money-out .money,
+.money-in .money {
+  padding-bottom: 8px !important;
 }
 #bg1 p:nth-child(1) {
   color: #9d9db0;
   letter-spacing: 2px;
   font-size: 14px;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
 }
 #bg2 p:nth-child(1) {
   color: #9d9db0;
   letter-spacing: 2px;
   font-size: 14px;
-  padding-bottom: 12px;
+  padding-bottom: 24px;
   text-align: center;
 }
 .view-more {
@@ -395,7 +428,7 @@ a.dropdown-item {
 .money-out,
 .money-in {
   /* overflow: auto; */
-  height: 550px !important;
+  height: 500px !important;
 }
 .m-b {
   margin-bottom: 30px;
@@ -416,7 +449,10 @@ p.money,
 #bg1 p:nth-child(1),
 #bg2 p:nth-child(1) {
   text-transform: uppercase;
-  font-size: 12px !important;
+  font-size: 12px;
+}
+input#search-input::placeholder {
+  color: #a0a3b5;
 }
 /*ipad, mobile landscape*/
 @media only screen and (max-width: 767px) and (min-width: 481px) {
