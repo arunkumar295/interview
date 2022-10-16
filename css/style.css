@@ -37,11 +37,11 @@ body {
 .nav-side-menu .brand {
   background-color: #fbfbfd;
   color: #333;
+
   line-height: 50px;
   display: block;
-  text-align: center;
   font-size: 14px;
-  padding: 10px;
+  padding: 4% 4% 4% 8%;
 }
 .nav-side-menu li a i {
   padding-left: 0px !important;
@@ -177,7 +177,7 @@ body {
     cursor: pointer;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 26px;
     z-index: 10 !important;
     padding: 15px;
     background-color: transparent;
@@ -460,7 +460,10 @@ input#search-input::placeholder {
     text-align: center;
     margin-top: 20px;
   }
-
+.brand{
+  padding: 4% 4% 4% 4%;
+  text-align: left;
+}
   .welcome,
   .mbalance,
   .money-out,
@@ -478,9 +481,15 @@ input#search-input::placeholder {
 
 /*mobile*/
 @media only screen and (max-width: 480px) and (min-width: 320px) {
+  .nav-side-menu .toggle-btn {
+    top: 10px;
+  }
   .mobile-btn {
     text-align: center;
     margin-top: 20px;
+  }
+  svg{
+    padding-left: 10px;
   }
   .welcome,
   .mbalance,
@@ -494,5 +503,9 @@ input#search-input::placeholder {
   }
   .mbalance #bg2 {
     height: 500px;
+  }
+  .brand{
+    padding: 4% 4% 4% 4%;
+    text-align: left;
   }
 }
