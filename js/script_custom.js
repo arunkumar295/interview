@@ -170,30 +170,44 @@ progress5();
 progress6();
 progress7();
 progress8();
-window.onload = function () {
+window.onload = function() {
 
-var chart = new CanvasJS.Chart("chartContainer", {
-  animationEnabled: true,  
-  title:{
-    text: "Company Revenue by Year"
-  },
-  axisY: {
-    title: "Revenue in USD",
-    valueFormatString: "#0,,.",
-    suffix: "mn",
-    prefix: "$"
-  },
-  data: [{
-    type: "splineArea",
-    color: "rgba(54,158,173,.7)",
-    markerSize: 5,
-    xValueFormatString: "YYYY",
-    yValueFormatString: "$#,##0.##",
-    dataPoints: [
-      {  y: 36, name: "Apple", legendText: "apple" },
-       {  y: 17, name: "Mango", legendText: "mango" }
-    ]
-  }]
-  });
-chart.render();
+    var options = {
+        exportEnabled: true,
+        animationEnabled: true,
+        
+        data: [{
+            type: "splineArea",
+            dataPoints: [{
+                    y: 10
+                },
+                {
+                    y: 6
+                },
+                {
+                    y: 14
+                },
+                {
+                    y: 12
+                },
+                {
+                    y: 19
+                },
+                {
+                    y: 14
+                },
+                {
+                    y: 26
+                },
+                {
+                    y: 10
+                },
+                {
+                    y: 22
+                }
+            ]
+        }]
+    };
+    $("#chartContainer").CanvasJSChart(options);
+
 }
